@@ -27,6 +27,7 @@ export default defineConfig({
         text: 'Getting started',
         collapsed: false,
         items: [
+          { text: 'How to Install Mods', link: '/apidocs/how-to-install-mods' },
           { text: 'Introduction', link: '/apidocs/' },
           // ...
         ],
