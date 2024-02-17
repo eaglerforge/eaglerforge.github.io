@@ -8,6 +8,7 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
+      { text: 'EaglerForge Guide', link: '/guide/' },
       { text: 'API Docs', link: '/apidocs/' },
 
       // {
@@ -24,12 +25,18 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Guide',
+        collapsed: false,
+        items: [
+          { text: 'Compiling EaglerForge', link: '/guide/' },
+          { text: 'How to Install Mods', link: '/guide/how-to-install-mods' },
+        ],
+      },
+      {
         text: 'Getting started',
         collapsed: false,
         items: [
-          { text: 'How to Install Mods', link: '/apidocs/how-to-install-mods' },
           { text: 'Introduction', link: '/apidocs/' },
-          // ...
         ],
       },
     ],
