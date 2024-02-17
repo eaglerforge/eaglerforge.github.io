@@ -14,8 +14,8 @@ It has the following properties:
 It has the following methods:
 - `addEventListener(eventName: String, callback: Function) : void`
     - Documentation [here](events/addEventListener.md)
-- `require(componentName: String)`
-    - Documentation [here](globals/require.md)
+<!--   - `require(componentName: String)`
+    - Documentation [here](globals/require.md) -->
 - `displayToChat({msg: String})`
     - Displays client-side message to user's ingame chat gui.
 - `uwuify({string: String})`

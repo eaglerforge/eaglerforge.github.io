@@ -39,6 +39,13 @@ export default defineConfig({
           { text: 'Introduction', link: '/apidocs/' },
         ],
       },
+      {
+        text: 'Events',
+        collapsed: false,
+        items: [
+          { text: 'ModAPI.addEventListener(String eventName, Function callback)', link: '/apidocs/events/addEventListener' },
+        ],
+      },
     ],
   },
 });
