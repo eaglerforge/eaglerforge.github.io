@@ -30,6 +30,8 @@ export default defineConfig({
         items: [
           { text: 'Compiling EaglerForge', link: '/guide/' },
           { text: 'How to Install Mods', link: '/guide/how-to-install-mods' },
+          { text: 'Loading mods from eaglercraftxopts', link: '/guide/Loading-mods-from-eaglercraftxopts' },
+          { text: 'Loading mods from the search bar', link: '/guide/Loading-mods-from-search-bar' },
         ],
       },
       {
