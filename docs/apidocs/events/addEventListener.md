@@ -12,8 +12,11 @@ It has the following valid values:
     - `event`: String representing the type of event being fired.
     - `data`: Object representing the original arguments to be passed to the callback.
 
-- `update`
-    Called every client tick. No arguments passed to callback.
+- `gui` Called when the Mod Manager GUI shows up. No arguments passed to callback.
+
+- `load` Called when all mods have finished loading.
+
+- `update` Called every client tick. No arguments passed to callback.
 
 
 ### (Function) Callback
