@@ -1,0 +1,106 @@
+# LivingEntityData
+
+A LivingEntityData usually has all of the properties of [EntityData](EntityData.md), and:
+- `isSwingInProgress: Boolean`
+- `arrowHitTimer: Integer`
+- `hurtTime: Integer`
+- `maxHurtTime: Integer`
+- `swingProgressInt: Integer`
+- `attackedAtYaw: Number`
+- `deathTime: Integer`
+- `prevSwingProgress: Number`
+- `swingProgress: Number`
+- `prevLimbSwingAmount: Number`
+- `limbSwingAmount: Number`
+- `limbSwing: Number`
+- `maxHurtResistantTime: Integer`
+- `prevCameraPitch: Number`
+- `cameraPitch: Number`
+- `renderYawOffset: Number`
+- `prevRenderYawOffset: Number`
+- `rotationYawHead: Number`
+- `prevRotationYawHead: Number`
+- `jumpMovementFactor: Number`
+- `recentlyHit: Integer`
+- `dead: Boolean`
+- `entityAge: Integer`
+- `onGroundSpeedFactor: Number`
+- `prevOnGroundSpeedFactor: Number`
+- `movedDistance: Number`
+- `prevMovedDistance: Number`
+- `scoreValue: Integer`
+- `movedDistance: Number`
+- `isJumping: Boolean`
+- `moveForward: Number`
+- `moveStrafing: Number`
+- `randomYawVelocity: Number`
+- `newPosRotationIncrements: Integer`
+- `newPosX: Number`
+- `newPosY: Number`
+- `newPosZ: Number`
+- `newRotationPitch: Number`
+- `newRotationYaw: Number`
+- `revengeTimer: Integer`
+- `lastAttackerTime: Integer`
+- `landMovementFactor: Number`
+- `jumpTicks: Integer`
+- `absorptionAmount: Number`
+
+It has the following methods:
+- `getPreviousEquipment() : ItemStackData[]`
+- `getAttackingPlayer() : PlayerData`
+- `getLastAttacker() : LivingEntityData`
+- `getEntityLivingToAttack() : LivingEntityData`
+- `setEntityLivingToAttack({entity: EntityRef}) : void`
+- `canBreatheUnderwater() : Boolean`
+- `isChild() : Boolean`
+- `canDropLoot() : Boolean`
+- `decreaseAirSupply({parInt1: Integer}) : Integer`
+- `isPlayer() : Boolean`
+- `getAITarget() : LivingEntityData`
+- `getRevengeTimer() : Integer`
+- `getLastAttackerTime() : Integer`
+- `getAge() : Integer`
+- `clearActivePotions() : void`
+- `isPotionActive({potionId: Integer}) : Boolean`
+- `isEntityUndead() : Boolean`
+- `removePotionEffectClient({potionId: Integer}) : void`
+- `removePotionEffect({potionId: Integer}) : void`
+- `heal({f: Number}) : void`
+- `getHealth() : Number`
+- `setHealth({health: Number}) : void`
+- `getHurtSound() : String`
+- `getDeathSound() : String`
+- `addRandomDrop() : void`
+- `isOnLadder() : Boolean`
+- `isEntityAlive() : Boolean`
+- `fall({f: Number, f1: Number}) : void`
+- `getFallSoundString({damageValue: Integer}) : String`
+- `performHurtAnimation() : void`
+- `getTotalArmorValue() : Integer`
+- `damageArmor({parFloat1: Number}) : void`
+- `getMaxHealth() : Number`
+- `getArrowCountInEntity() : Integer`
+- `setArrowCountInEntity({count: Integer}) : void`
+- `swingItem() : void`
+- `kill() : void`
+- `setSprinting({flag: Boolean}) : void`
+- `getSoundVolume() : Number`
+- `getSoundPitch() : Number`
+- `isMovementBlocked() : Boolean`
+- `getJumpUpwardsMotion() : Number`
+- `jump() : void`
+- `updateAITick() : void`
+- `handleJumpLava() : void`
+- `getAIMoveSpeed() : Number`
+- `setAIMoveSpeed({speedIn: Number}) : void`
+- `collideWithNearbyEntities() : void`
+- `setJumping({parFlag: Boolean}) : void`
+- `canBeCollidedWith() : Boolean`
+- `canBePushed() : Boolean`
+- `setBeenAttacked() : void`
+- `getRotationYawHead() : Number`
+- `setRotationYawHead({f: Number}) : void`
+- `getAbsorptionAmount() : Number`
+- `setAbsorptionAmount({amount: Number}) : void`
+- `markPotionsDirty() : void`

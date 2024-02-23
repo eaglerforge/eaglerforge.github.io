@@ -1,0 +1,73 @@
+# GameSettingsData
+Represents the game's settings.
+
+Has the following properties:
+- `mouseSensitivity: Number`
+- `invertMouse: Boolean`
+- `renderDistanceChunks: Integer`
+- `viewBobbing: Boolean`
+- `anaglyph: Boolean`
+- `fboEnable: Boolean`
+- `limitFramerate: Integer`
+- `clouds: Integer`
+- `fancyGraphics: Boolean`
+- `ambientOcclusion: Integer`
+- `chatVisibility: String`
+    - Can be one of: `FULL`, `SYSTEM` or `HIDDEN`
+- `chatColours: Boolean`
+- `chatLinks: Boolean`
+- `chatLinksPrompt: Boolean`
+- `chatOpacity: Number`
+- `enableVsync: Boolean`
+- `snooperEnabled: Boolean`
+- `allowBlockAlternatives: Boolean`
+- `reducedDebugInfo: Boolean`
+- `hideServerAddress: Boolean`
+- `pauseOnLostFocus: Boolean`
+- `touchscreen: Boolean`
+- `overrideWidth: Integer`
+- `overrideHeight: Integer`
+- `heldItemTooltips: Boolean`
+- `chatScale: Number`
+- `chatWidth: Number`
+- `chatHeightUnfocused: Number`
+- `chatHeightFocused: Number`
+- `streamBytesPerPixel: Number`
+- `streamMicVolume: Number`
+- `streamGameVolume: Number`
+- `streamKbps: Number`
+- `streamFps: Number`
+- `fovSetting: Number`
+- `gammaSetting: Number`
+- `saturation: Number`
+- `streamChatEnabled: Integer`
+- `streamChatUserFilter: Integer`
+- `streamMicToggleBehavior: Integer`
+- `guiScale: Integer`
+- `fxaa: Integer`
+- `particleSetting: Integer`
+- `streamCompression: Integer`
+- `thirdPersonView: Integer`
+- `mipmapLevels: Integer`
+- `forceUnicodeFont: Boolean`
+- `hudFps: Boolean`
+- `hudCoords: Boolean`
+- `hudPlayer: Boolean`
+- `hudWorld: Boolean`
+- `hudStats: Boolean`
+- `hud24h: Boolean`
+- `chunkFix: Boolean`
+- `fog: Boolean`
+- `streamSendMetadata: Boolean`
+- `hideGUI: Boolean`
+- `smoothCamera: Boolean`
+- `debugCamEnable: Boolean`
+- `showDebugInfo: Boolean`
+- `showDebugProfilerChart: Boolean`
+- `showInventoryAchievementHint: Boolean`
+- `difficulty: String`
+    - Can be one of `PEACEFUL`, `EASY`, `NORMAL` or `HARD`
+- `lastServer: String`
+- `language: String`
+- `streamPreferredServer: String`
+- `keyBindings: KeyBindingData[]`

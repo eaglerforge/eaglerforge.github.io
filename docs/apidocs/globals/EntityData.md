@@ -1,0 +1,116 @@
+# EntityData
+
+A typical EntityData object will have the following properties:
+- `x`: Number: Equal to the entity's `posX`.
+- `y`: Number: Equal to the entity's `posY`.
+- `z`: Number: Equal to the entity's `posZ`.
+- `chunkCoordX`: Number: Equal to the entity's `chunkCoordX`. (Read-only)
+- `chunkCoordY`: Number: Equal to the entity's `chunkCoordY`. (Read-only)
+- `chunkCoordZ`: Number: Equal to the entity's `chunkCoordZ`. (Read-only)
+- `motionX`: Number: Equal to the entity's `motionX`.
+- `motionY`: Number: Equal to the entity's `motionY`.
+- `motionZ`: Number: Equal to the entity's `motionZ`.
+- `yaw`: Number: Equal to the entity's `rotationYaw`.
+- `pitch`: Number: Equal to the entity's `rotationPitch`.
+- `isInWeb`: Boolean: Equal to the entity's `isInWeb`.
+- `isCollided`: Boolean: Equal to the entity's `isCollided`.
+- `isCollidedVertically`: Boolean: Equal to the entity's `isCollidedVertically`.
+- `isCollidedHorizontally`: Boolean: Equal to the entity's `isCollidedHorizontally`.
+- `onGround`: Boolean: Equal to the entity's `onGround`.
+- `dimension`: Integer: Equal to the entity's `dimension`. (Read-only)
+- `id`: Integer: Equal to the entity's `entityId`. (Read-only)
+- `fallDistance`: Number: Equal to the entity's `fallDistance`. (Read-only)
+- `noClip`: Boolean: Equal to the entity's `noClip`.
+- `stepHeight`: Number: Equal to the entity's `stepHeight`.
+- `isDead`: Boolean: Equal to the entity's `isDead`. (Read-only)
+- `inPortal`: Boolean: Equal to the entity's `inPortal`.
+- `inWater`: Boolean: Equal to the entity's `inWater`.
+- `isAirBorne`: Boolean: Equal to the entity's `isAirBorne`.
+- `ticksExisted`: Integer: Equal to the entity's `ticksExisted`. (Read-only)
+- `invulnerable`: Boolean: Equal to the entity's `invulnerable`.
+- `isImmuneToFire`: Boolean: Equal to the entity's `isImmuneToFire`.
+- `isOutsideBorder`: Boolean: Equal to the entity's `isOutsideBorder`.
+- `entityCollisionReduction`: Number: Equal to the entity's `entityCollisionReduction`.
+
+It contains the following methods:
+
+- `isBurning() : boolean`
+- `isPushedByWater() : boolean`
+- `isEating() : boolean`
+- `isEntityAlive() : boolean`
+- `isEntityInsideOpaqueBlock() : boolean`
+- `isImmuneToExplosions() : boolean`
+- `isImmuneToFire() : boolean`
+- `isInLava() : boolean`
+- `isInRangeToRender3d({x: number, y: number: z: number}) : boolean`
+- `isInRangeToRenderDist({distance: number}) : boolean`
+- `isInWater() : boolean`
+- `isInvisible() : boolean`
+- `isPushedByWater() : boolean`
+- `isRiding() : boolean`
+- `isSilent() : boolean`
+- `isSneaking() : boolean`
+- `isSprinting() : boolean`
+- `isWet() : boolean`
+- `setAir({air: integer}) : void`
+- `setAlwaysRenderNameTag({alwaysRenderNameTag: boolean}) : void`
+- `setAngles({yaw: number, pitch: number}) : void`
+- `setBeenAttacked() : void`
+- `setCustomNameTag({name: string}) : void`
+- `setDead() : void`
+- `setEating({eating: boolean}) : void`
+- `setEntityId({id: integer}) : void`
+- `setFire({seconds: integer}) : void`
+- `setFlag({flag: integer, set: boolean}) : void`
+- `setInWeb() : void`
+- `setInvisible({invisible: boolean}) : void`
+- `setLocationAndAngles({x: number, y: number, z: number, yaw: number, pitch: number}) : void`
+- `setOnFireFromLava() : void`
+- `setOutsideBorder({outsideBorder: boolean}) : void`
+- `setPosition({x: number, y: number, z: number}) : void`
+- `setPositionAndRotation({x: number, y: number, z: number, yaw: number, pitch: number}) : void`
+- `setPositionAndRotation2({d0: number, d1: number, d2: number, f: number, f1: number, var9: integer, var10: boolean}) : void`
+- `setPositionAndUpdate({d0: number, d1: number, d2: number}) : void`
+- `setRotation({yaw: number, pitch: number}) : void`
+- `setRotationYawHead({rotation: number}) : void`
+- `setSilent({isSilent: boolean}) : void`
+- `setSize({f: number, f1: number}) : void`
+- `setSneaking({sneaking: boolean}) : void`
+- `setSprinting({flag: boolean}) : void`
+- `setVelocity({x: number, y: number, z: number}) : void`
+- `getUUID() : string`
+- `getAir() : integer`
+- `getAlwaysRenderNameTag() : boolean`
+- `getAlwaysRenderNameTagForRender() : boolean`
+- `getBrightness({var1: number}) : number`
+- `getBrightnessForRender({var1: number}) : integer`
+- `getCollisionBorderSize() : number`
+- `getCollisionBoundingBox() : [AxisAlignedBB](AxisAlignedBB.md)`
+- `getCommandSenderEntity() : [EntityData](EntityData.md)`
+- `getCustomNameTag() : string`
+- `getDisplayName() : string`
+- `getDisplayNameFormatted() : string`
+- `getDistance({x: number, y: number, z: number}) : number`
+- `getDistanceSq({x: number, y: number, z: number}) : number`
+- `getMountedYOffset() : number`
+- `getEntityId() : integer`
+- `getEntityString() : string`
+- `getEyeHeight() : number`
+- `getFlag({flag: integer}) : boolean`
+- `getMaxFallHeight() : integer`
+- `getMaxInPortalTime() : integer`
+- `getName() : string`
+- `getParts() : [Array<EntityData>](EntityData.md)`
+- `getPortalCooldown() : integer`
+- `getRotationYawHead() : number`
+- `getSplashSound() : string`
+- `getSwimSound() : string`
+- `getYOffset() : number`
+- `getClassName() : string`
+- `getPositionVector() : [Vec3](Vec3.md)`
+- `getPositionEyes({partialTicks: number}) : [Vec3](Vec3.md)`
+- `getLook({partialTicks: number}) : [Vec3](Vec3.md)`
+- `getLookVec() : [Vec3](Vec3.md)`
+- `getVectorForRotation({yaw: number, float: number}) : [Vec3](Vec3.md)`
+- `toNBT() : String`
+- `fromNBT({nbt: String}) : void`

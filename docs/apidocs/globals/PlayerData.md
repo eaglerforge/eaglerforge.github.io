@@ -1,0 +1,126 @@
+# PlayerData
+Represents a player.
+
+A PlayerData usually has all of the properties of [LivingEntityData](LivingEntityData.md), and:
+
+- `foodStats`: [FoodStatsData](FoodStatsData.md): Equal to the player's `foodStats`.
+- `cameraYaw`: Number: Equal to the player's `cameraYaw`.
+- `chasingPosX`: Number: Equal to the player's `chasingPosX`.
+- `chasingPosY`: Number: Equal to the player's `chasingPosY`.
+- `chasingPosZ`: Number: Equal to the player's `chasingPosZ`.
+- `experience`: Number: The player's experience number.
+- `experienceLevel`: Integer: The player's experience level.
+- `experienceTotal`: Integer: The player's experience total.
+- `fishEntity`: [FishHookData](FishHookData.md): The player's fishing bobber / hook. (If existing)
+- `flyToggleTimer`: Integer: Equal to the player's `flyToggleTimer`.
+- `hasReducedDebug`: Boolean: Equal to the player's `hasReducedDebug`.
+- `itemInUseCount`: Integer: The count of the item that the player is currenly using. (Read-only)
+- `itemInUse`: [ItemStackData](ItemStackData.md): The itemstack the player is using. (If existing)
+- `lastXPSound`: Integer: Equal to the player's `lastXPSound`.
+- `sleepTimer`: Integer: Equal to the player's `sleepTimer`.
+- `sleeping`: Boolean: Whether or not the player is sleeping.
+- `spawnForced`: Boolean: Equal to the player's `spawnForced`.
+- `speedInAir`: Number: Equal to the player's `speedInAir`.
+- `speedOnGround`: Number: Equal to the player's `speedOnGround`.
+- `xpCooldown`: Integer: Equal to the player's `xpCooldown`.
+- `xpSeed`: Integer: Equal to the player's `xpSeed`.
+- `inventoryContainer`: [ContainerData](ContainerData.md): Equal to the player's `inventoryContainer`.
+- `openContainer`: [ContainerData](ContainerData.md): Equal to the player's `openContainer`.
+- `inventory`: [InventoryPlayerData](InventoryPlayerData.md): Equals to the player's `inventory`.
+- `capabilities`: [PlayerCapabilities](PlayerCapabilities.md): Equals to the player's `capabilities`.
+
+It has the following methods:
+- `getItemInUse() : ItemStackData`
+- `getItemInUseCount() : Integer`
+- `isUsingItem() : Boolean`
+- `getItemInUseDuration() : Integer`
+- `stopUsingItem() : void`
+- `clearItemInUse() : void`
+- `isBlocking() : Boolean`
+- `getMaxInPortalTime() : Integer`
+- `getSwimSound() : String`
+- `getSplashSound() : String`
+- `getPortalCooldown() : Integer`
+- `playSound({s: String, f: Number, f1: Number}) : void`
+- `updateItemUse({itemStackIn: ItemStackData, parInt1: Integer}) : void`
+- `onItemUseFinish() : void`
+- `handleStatusUpdate({b0: Byte}) : void`
+- `isMovementBlocked() : Boolean`
+- `closeScreen() : void`
+- `updateRidden() : void`
+- `preparePlayerToSpawn() : void`
+- `updateEntityActionState() : void`
+- `onLivingUpdate() : void`
+- `collideWithPlayer({parEntity: EntityData}) : void`
+- `getScore() : Integer`
+- `addScore({parInt1: Integer}) : void`
+- `getHurtSound() : String`
+- `getDeathSound() : String`
+- `addToPlayerScore({entity: EntityData, i: Integer}) : void`
+- `dropOneItem({flag: Boolean}) : ItemEntityData`
+- `dropPlayerItemWithRandomChoice({itemStackIn: ItemStackData}) : ItemEntityData`
+- `dropItem({droppedItem: ItemStackData, dropAround: Boolean, traceItem: Boolean}) : ItemEntityData`
+- `joinEntityItemWithWorld({entityitem: ItemEntityData}) : void`
+- `getToolDigEfficiency({parBlock: BlockData}) : Number`
+- `canHarvestBlock({blockToHarvest: BlockData}) : Boolean`
+- `canAttackPlayer({entityplayer: PlayerData}) : Boolean`
+- `damageArmor({f: Number}) : void`
+- `getTotalArmorValue() : Integer`
+- `getArmorVisibility() : Number`
+- `interactWith({parEntity: EntityData}) : Boolean`
+- `getCurrentEquippedItem() : ItemStackData`
+- `destroyCurrentEquippedItem() : void`
+- `getYOffset() : Number`
+- `attackTargetEntityWithCurrentItem({entity: EntityData}) : void`
+- `respawnPlayer() : void`
+- `isEntityInsideOpaqueBlock() : Boolean`
+- `isUser() : Boolean`
+- `trySleep({blockpos: BlockPos}) : String`
+- `wakeUpPlayer({flag: Boolean, flag1: Boolean, flag2: Boolean}) : void`
+- `isInBed() : Boolean`
+- `getBedOrientationInDegrees() : Number`
+- `isPlayerSleeping() : Boolean`
+- `isPlayerFullyAsleep() : Boolean`
+- `getSleepTimer() : Integer`
+- `getBedLocation() : BlockPos`
+- `isSpawnForced() : Boolean`
+- `setSpawnPoint({pos: BlockPos, forced: Boolean}) : void`
+- `moveEntityWithHeading({f: Number, f1: Number}) : void`
+- `getAIMoveSpeed() : Number`
+- `addMovementStat({parDouble1: Number, parDouble2: Number, parDouble3: Number}) : void`
+- `addMountedMovementStat({parDouble1: Number, parDouble2: Number, parDouble3: Number}) : void`
+- `fall({f: Number, f1: Number}) : void`
+- `resetHeight() : void`
+- `getFallSoundString({i: Integer}) : String`
+- `setInWeb() : void`
+- `getCurrentArmor({i: Integer}) : ItemStackData`
+- `addExperience({amount: Integer}) : void`
+- `getXPSeed() : Integer`
+- `removeExperienceLevel({i: Integer}) : void`
+- `addExperienceLevel({i: Integer}) : void`
+- `xpBarCap() : Integer`
+- `addExhaustion({parFloat1: Number}) : void`
+- `getFoodStats() : FoodStatsData`
+- `canEat({ignoreHunger: Boolean}) : Boolean`
+- `shouldHeal() : Boolean`
+- `setItemInUse({itemstack: ItemStackData, i: Integer}) : void`
+- `isAllowEdit() : Boolean`
+- `canPlayerEdit({parBlockPos: BlockPos, parEnumFacing: String, parItemStack: ItemStackData}) : Boolean`
+    - `parEnumFacing` can be one of `UP`, `DOWN`, `NORTH`, `SOUTH`, `EAST` or `WEST`
+- `isPlayer() : Boolean`
+- `getAlwaysRenderNameTagForRender() : Boolean`
+- `clonePlayer({entityplayer: PlayerData, flag: Boolean}) : void`
+- `canTriggerWalking() : Boolean`
+- `sendPlayerAbilities() : void`
+- `getName() : String`
+- `getEquipmentInSlot({i: Integer}) : ItemStackData`
+- `getHeldItem() : ItemStackData`
+- `setCurrentItemOrArmor({i: Integer, itemstack: ItemStackData}) : void`
+- `isInvisibleToPlayer({entityplayer: PlayerData}) : Boolean`
+- `getInventory() : ItemStackData[]`
+- `isPushedByWater() : Boolean`
+- `getEyeHeight() : Number`
+- `getOfflineUUID({username: String}) : String`
+- `replaceItemInInventory({i: Integer, itemstack: ItemStack}) : Boolean`
+- `hasReducedDebug() : Boolean`
+- `setReducedDebug({reducedDebug: Boolean}) : void`

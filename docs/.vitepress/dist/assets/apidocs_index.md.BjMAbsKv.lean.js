@@ -1,0 +1,1 @@
+import{_ as e,c as l,o,V as t}from"./chunks/framework.gkMttBBc.js";const m=JSON.parse('{"title":"Mod API","description":"","frontmatter":{},"headers":[],"relativePath":"apidocs/index.md","filePath":"apidocs/index.md"}'),a={name:"apidocs/index.md"},i=t("",23),r=[i];function d(c,n,s,u,g,h){return o(),l("div",null,r)}const f=e(a,[["render",d]]);export{m as __pageData,f as default};
