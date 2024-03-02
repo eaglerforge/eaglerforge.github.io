@@ -38,10 +38,14 @@ It has the following methods:
     - Triggers a right click ingame.
 - `getFPS()`
   - returns the current fps
+- `currentScreen()`
+  - returns the current screen as a string 
 - `getdisplayHeight()`
   - returns screen height
 - `getdisplayWidth()` 
   - returns screen width
+- `getFONT_HEIGHT()`
+  - returns the FONT_HEIGHT 
 - `drawStringWithShadow({msg: String, x: Integer, y: Integer, color: Integer})` 
   - draws your string to screen and needs to be ran when the `drawhud` event is called. the color parameter needs be hex but # is replaced with 0x
 - `drawString({msg: String, x: Integer, y: Integer, color: Integer})`
