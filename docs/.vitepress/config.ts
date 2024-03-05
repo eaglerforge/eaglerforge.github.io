@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 
+
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'en-US',
@@ -7,6 +8,9 @@ export default defineConfig({
   description: 'Mod loader for eaglercraft',
 
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: 'EaglerForge Guide', link: '/guide/' },
       { text: 'API Docs', link: '/apidocs/' },
