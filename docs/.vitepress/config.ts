@@ -68,6 +68,7 @@ export default defineConfig({
           { text: 'ModAPI.require(String componentName)', link: '/apidocs/globals/require' },
           { text: 'emptygui', link: '/apidocs/globals/emptygui' },
           { text: 'ScaledResolution', link: '/apidocs/globals/ScaledResolution' },
+          { text: 'GlStateManager', link: '/apidocs/globals/GlStateManager' },
           { text: 'BlockData', link: '/apidocs/globals/BlockData' },
           { text: 'ChunkData', link: '/apidocs/globals/ChunkData' },
           { text: 'ContainerData', link: '/apidocs/globals/ContainerData' },

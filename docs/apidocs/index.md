@@ -46,6 +46,8 @@ It has the following methods:
   - returns screen width
 - `getFONT_HEIGHT()`
   - returns the FONT_HEIGHT 
+- `getStringWidth({string: String}) : int`
+  - returns the width of a string based on minecraft's font
 - `drawStringWithShadow({msg: String, x: Integer, y: Integer, color: Integer})` 
   - draws your string to screen and needs to be ran when the `drawhud` event is called. the color parameter needs be hex but # is replaced with 0x
 - `drawString({msg: String, x: Integer, y: Integer, color: Integer})`
@@ -71,13 +73,16 @@ ModAPI.player.motionY += 1;
 ModAPI.player.reload();
 ```
 
-Frequent calls to `reload()` may cause lag, so try to limit them.
+Frequent calls to `reload()` may cause lag, so try to limit them
+
 
 # Logger API
 Allows you to access the Log4J library from javascript. you can access it from `ModAPI.logger.(method)`.
 
 it has the following methods:
 
+- `setlogger({name: String})`
+  - allows you to set the name of the logger
 - `loginfo({string: String})`
 - `logerror({string: String})`
 - `logdebug({string: String})`
