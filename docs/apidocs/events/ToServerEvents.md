@@ -96,7 +96,7 @@ Events called by packets being sent to the server by the client.
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `sendpacketplayerdigging`
-    - `position`: [BlockPos](../globals/BlockPos.md)
+    - `position`: BlockPos
     - `facing`: String
         - Can be one of: `UP`, `DOWN`, `NORTH`, `SOUTH`, `EAST`, `WEST`
     - `status`: String
@@ -104,7 +104,7 @@ Events called by packets being sent to the server by the client.
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `sendpacketplayerdigging`
-    - `position`: [BlockPos](../globals/BlockPos.md)
+    - `position`: BlockPos
     - `facing`: String
         - Can be one of: `UP`, `DOWN`, `NORTH`, `SOUTH`, `EAST`, `WEST`
     - `status`: String
@@ -112,7 +112,7 @@ Events called by packets being sent to the server by the client.
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `sendpacketplayerblockplacement`
-    - `position`: [BlockPos](../globals/BlockPos.md)
+    - `position`: BlockPos
     - `placedBlockDirection`: Integer
     - `facingX`: Number
     - `facingY`: Number
@@ -135,7 +135,7 @@ Events called by packets being sent to the server by the client.
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `sendpacketupdatesign`
-    - `pos`: [BlockPos](../globals/BlockPos.md)
+    - `pos`: BlockPos
     - `lines`: String[] [change-length]
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
@@ -150,7 +150,7 @@ Events called by packets being sent to the server by the client.
 
 - `sendpackettabcomplete`
     - `message`: String
-    - `targetBlock`: [BlockPos](../globals/BlockPos.md)
+    - `targetBlock`: BlockPos
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `sendpacketclientsettings`
