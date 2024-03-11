@@ -5,6 +5,8 @@ The Mod API consists of a global JavaScript object on the window, called, very s
 It has the following properties:
 - `player: LocalPlayerData`
     - A [`LocalPlayerData`](globals/LocalPlayerData.md) made from `EntityPlayerSP`. Regenerated every time the `update` event is called.
+- `network: NetworkData`
+    - A [`NetworkData`](globals/NetworkData.md) made from `NetHandlerPlayClient`. Regenerated every time the `update` event is called.
 - `settings: GameSettingsData`
     - A [`GameSettingsData`](globals/GameSettingsData.md) made from `GameSettings`. Regenerated every time the `update` event is called.
 - `items: ItemData{}`
@@ -62,7 +64,7 @@ Eg: `setCurrentItemOrArmor({slotIn: Integer, itemStack: ItemStackRef}) : void`
 This method's itemStack parameter uses an 'ItemStackRef'. 'Refs' are short for 'references', as they are the root reference to a java object, not just a data wrapper. You can get a ref from a Data by using `getRef()`, as specified [here](globals/Data.md).
 
 ### Using non-auto properties
-In order to use non-auto properties like `ModAPI.player` or `ModAPI.settings`, they must be [required](globals/require.md)
+In order to use non-auto properties like `ModAPI.player` or `ModAPI.network`, they must be [required](globals/require.md)
 
 ### Triggering data updates (`reload()`)
 To trigger the game to read your updated values, call the `reload()` method on the object.

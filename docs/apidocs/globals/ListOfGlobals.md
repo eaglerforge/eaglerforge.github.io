@@ -2,6 +2,10 @@
 
 - `ModAPI.player`
     A [`LocalPlayerData`](LocalPlayerData.md) made from `EntityPlayerSP`.
+- `ModAPI.network`
+    - A [`NetworkData`](NetworkData.md) made from `NetHandlerPlayClient`.
+- `ModAPI.settings`
+    A [`GameSettingsData`](GameSettingsData.md) made from `GameSettings`.
 - `ModAPI.items`
     An [`ItemData`](ItemData.md) array of all the in-game item types, and block-item types. [Auto]
 - `ModAPI.blocks`

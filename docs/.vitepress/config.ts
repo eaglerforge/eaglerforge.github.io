@@ -51,6 +51,8 @@ export default defineConfig({
         items: [
           { text: 'ModAPI.addEventListener(String eventName, Function callback)', link: '/apidocs/events/addEventListener' },
           { text: 'ModAPI.removeEventListener(String eventName, Function callback, Boolean slow?)', link: '/apidocs/events/removeEventListener' },
+          { text: 'Receiving packet events', link: '/apidocs/events/FromServerEvents' },
+          { text: 'Sending packet events', link: '/apidocs/events/ToServerEvents' },
         ],
       },
       {
@@ -64,6 +66,7 @@ export default defineConfig({
           { text: 'PlayerData', link: '/apidocs/globals/PlayerData' },
           { text: 'LocalPlayerData', link: '/apidocs/globals/LocalPlayerData' },
           { text: 'RemotePlayerData', link: '/apidocs/globals/RemotePlayerData' },
+          { text: 'NetworkData', link: '/apidocs/globals/NetworkData' },
           { text: 'PlayerCapabilities', link: '/apidocs/globals/PlayerCapabilities' },
           { text: 'ModAPI.require(String componentName)', link: '/apidocs/globals/require' },
           { text: 'emptygui', link: '/apidocs/globals/emptygui' },
