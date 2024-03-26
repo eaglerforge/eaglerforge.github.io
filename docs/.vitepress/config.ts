@@ -59,7 +59,6 @@ export default defineConfig({
         text: 'Globals',
         collapsed: false,
         items: [
-          { text: 'List of Globals', link: '/apidocs/globals/ListOfGlobals' },
           { text: 'Data', link: '/apidocs/globals/Data' },
           { text: 'EntityData', link: '/apidocs/globals/EntityData' },
           { text: 'LivingEntityData', link: '/apidocs/globals/LivingEntityData' },
@@ -69,7 +68,8 @@ export default defineConfig({
           { text: 'NetworkData', link: '/apidocs/globals/NetworkData' },
           { text: 'PlayerCapabilities', link: '/apidocs/globals/PlayerCapabilities' },
           { text: 'ModAPI.require(String componentName)', link: '/apidocs/globals/require' },
-          { text: 'emptygui', link: '/apidocs/globals/emptygui' },
+          { text: 'SingleplayerData', link: '/apidocs/globals/SingleplayerData' },
+          { text: 'MultiPlayerData', link: '/apidocs/globals/MultiPlayerData' },
           { text: 'ScaledResolution', link: '/apidocs/globals/ScaledResolution' },
           { text: 'GlStateManager', link: '/apidocs/globals/GlStateManager' },
           { text: 'BlockData', link: '/apidocs/globals/BlockData' },

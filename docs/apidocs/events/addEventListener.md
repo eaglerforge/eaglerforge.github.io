@@ -18,6 +18,8 @@ It has the following valid values:
 
 - `update` Called every client tick. No arguments passed to callback.
 
+- `frame` Called every frame
+
 - `sendchatmessage`
     Called just before the player sends a chat message. Passes an object with properties:
     - `message`: String representing the chat message.

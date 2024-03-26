@@ -21,6 +21,8 @@ A LocalPlayerData usually has all of the properties of [PlayerData](PlayerData.m
 - `prevRenderArmPitch: Number`
 - `horseJumpPower: Number`
 - `horseJumpPowerCounter: Integer`
+- `moveStrafing: Integer`
+- `moveForward: Integer`
 
 It has these methods:
 - `mountEntity({entityIn: EntityRef}) : void`
@@ -44,3 +46,8 @@ It has these methods:
 - `getHorseJumpPower() : Number`
 - `isCurrentViewEntity() : Boolean`
 - `isSpectator() : Boolean`
+- `getSpeed(): Integer`
+- `isMoving(): Boolean`
+- `hasMotion(): Boolean`
+- `getSpeed(): Integer`
+- `setSpeed({speed: Integer}): void`

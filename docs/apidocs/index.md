@@ -8,7 +8,9 @@ It has the following properties:
 - `network: NetworkData`
     - A [`NetworkData`](globals/NetworkData.md) made from `NetHandlerPlayClient`. Regenerated every time the `update` event is called.
 - `settings: GameSettingsData`
-    - A [`GameSettingsData`](globals/GameSettingsData.md) made from `GameSettings`. Regenerated every time the `update` event is called.
+    - A [`GameSettingsData`](globals/GameSettingsData.md) made from `GameSettings`. Regenerated every time the `frame` event is called.
+- `server: MultiPlayerData`
+    - A [`MultiPlayerData`](globals/MultiPlayerData.md) made from `currentServerData`. Regenerated every time the `update` event is called.
 - `items: ItemData{}`
     - A [`ItemData`](globals/ItemData.md) dictionary of all item types, and block-item types. [Auto]
 - `blocks: BlockData{}`
@@ -17,6 +19,8 @@ It has the following properties:
     - A [`MaterialData`](globals/MaterialData.md) dictionary of all the block materials. [Auto]
 - `enchantments: EnchantmentData{}`
     - An [`EnchantmentData`](globals/EnchantmentData.md) dictionary of all the in-game enchantments. [Auto]
+- `sp: SingleplayerData`
+    - A [`SingleplayerData`](globals/SingleplayerData.md) made from `SingleplayerServerController`[Auto]
 - `mcinstance: Object`
     - This is the `Minecraft` instance exposed to JavaScript. It has no wrapping, and so many properties will be illegible. To use it, I would recommend editing the `build.gradle` in the workspace to set `minifying: false;` [Auto]
 - `version: String`
