@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress';
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
+  srcDir: 'fuckery',
   lang: 'en-US',
   title: 'EaglerForge',
   description: 'Mod loader for eaglercraft',
