@@ -20,6 +20,9 @@ It has the following valid values:
 
 - `frame` Called every frame
 
+- `render` Called every time a frame is done rendering. Passes an object with properties:
+      - `partialTicks`: The partial ticks into the frame. Eg, if the frame was rendered when the in-game clock hit a quarter of a tick, this would be 0.25.
+
 - `sendchatmessage`
     Called just before the player sends a chat message. Passes an object with properties:
     - `message`: String representing the chat message.
